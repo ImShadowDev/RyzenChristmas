@@ -1,0 +1,126 @@
+prefix: "&#FF0000&l[&#FFFFFF&lNavidad&#FF0000&l] &#FFFFFF"
+
+advent:
+  reward-claimed: "%prefix%&a¡Has reclamado la recompensa del día %day%!"
+  already-claimed: "%prefix%&#FF0000Ya has reclamado la recompensa de este día."
+  not-available: "%prefix%&#FF0000Este día aún no está disponible."
+  day-missed: "%prefix%&#FFFF00Has perdido la recompensa del día %day%."
+  must-claim-previous: "%prefix%&#FF0000Debes reclamar los días anteriores primero."
+
+  notification:
+    join: "%prefix%&#FFFF00¡Tienes %days% día(s) disponible(s) para reclamar!"
+    new-day: "%prefix%&a¡Un nuevo día del calendario está disponible!"
+
+  calendar-opened: "%prefix%Calendario de adviento abierto."
+  calendar-not-active: "%prefix%&#FF0000El calendario de adviento no está activo actualmente."
+
+  mode:
+    classic: "Clásico"
+    accumulative: "Acumulativo"
+    progressive: "Progresivo"
+
+cosmetics:
+  menu-opened: "%prefix%Menú de cosméticos abierto."
+  equipped: "%prefix%&aHas equipado: &#FFFFFF%cosmetic%"
+  unequipped: "%prefix%&#FFFF00Has desequipado: &#FFFFFF%type%"
+  unequipped-all: "%prefix%&#FFFF00Todos los cosméticos han sido desequipados."
+  not-unlocked: "%prefix%&#FF0000No has desbloqueado este cosmético."
+  already-equipped: "%prefix%&#FFFF00Ya tienes este cosmético equipado."
+  unlocked: "%prefix%&a¡Has desbloqueado: &#FFFFFF%cosmetic%&a!"
+  slot-occupied: "%prefix%&#FF0000¡El slot %slot% ya tiene un item! Retíralo primero para equipar este gadget."
+
+gifts:
+  given: "%prefix%&aHas dado &#FFFFFF%amount%x %box% &aa &#FFFFFF%player%&a."
+  received: "%prefix%&aHas recibido &#FFFFFF%amount%x %box%&a!"
+  giveall-success: "%prefix%&aSe han dado &#FFFFFF%amount%x %box% &aa &#FFFFFF%players% jugador(es)&a."
+  box-not-found: "%prefix%&#FF0000La caja &#FFFFFF%box% &#FF0000no existe."
+  no-boxes: "%prefix%&#FFFF00No hay cajas de regalo cargadas."
+  invalid-amount: "%prefix%&#FF0000Cantidad inválida. Usa un número mayor a 0."
+
+  usage-give: "%prefix%&#FF0000Uso: /gift give <player> <box_id> <amount>"
+  usage-giveall: "%prefix%&#FF0000Uso: /gift giveall <box_id> <amount>"
+
+  list-header: "%prefix%&aCajas de regalo disponibles:"
+  list-format: "  &#FFD700• &#FFFFFF%id% &#FFD700- %name%"
+
+  reload-success: "%prefix%&aCajas de regalo recargadas correctamente."
+  reload-failed: "%prefix%&#FF0000Error al recargar las cajas de regalo."
+
+  help-header: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬ &#FFFFFF&lSistema de Regalos &#FF0000&l▬▬▬▬▬▬▬▬▬▬▬"
+  help-commands:
+    - "&#FFD700• /gift give <player> <box_id> <amount>"
+    - "  &#FFFFFF- Da una caja de regalo a un jugador"
+    - ""
+    - "&#FFD700• /gift giveall <box_id> <amount>"
+    - "  &#FFFFFF- Da cajas a todos los jugadores online"
+    - ""
+    - "&#FFD700• /gift list"
+    - "  &#FFFFFF- Lista todas las cajas disponibles"
+    - ""
+    - "&#FFD700• /gift reload"
+    - "  &#FFFFFF- Recarga las cajas de regalo"
+  help-footer: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+winter:
+  started: "%prefix%&aEfecto de nieve iniciado en &#FFFFFF%world% &acon nivel &#FFFFFF%level% &adurante &#FFFFFF%time%&a."
+  started-all: "%prefix%&aEfecto de nieve iniciado en &#FFFFFFtodos los mundos &acon nivel &#FFFFFF%level% &adurante &#FFFFFF%time%&a."
+  stopped: "%prefix%&#FFFF00Efecto de nieve detenido en &#FFFFFF%world%&#FFFF00."
+  stopped-all: "%prefix%&#FFFF00Efecto de nieve detenido en &#FFFFFFtodos los mundos&#FFFF00."
+  not-active: "%prefix%&#FF0000No hay efecto de nieve activo en &#FFFFFF%world%&#FF0000."
+  world-not-found: "%prefix%&#FF0000El mundo &#FFFFFF%world% &#FF0000no existe."
+  invalid-level: "%prefix%&#FF0000Nivel inválido. Usa un número entre 1 y 10."
+  invalid-time: "%prefix%&#FF0000Formato de tiempo inválido. Usa: 30s, 5m, 1h, o -1 para infinito."
+  no-active: "%prefix%&#FFFF00No hay efectos de nieve activos actualmente."
+
+  info: "%prefix%&aInformación de &#FFFFFF%world%&a:\n  &#FFD700Nivel: &#FFFFFF%level%\n  &#FFD700Tiempo restante: &#FFFFFF%remaining%"
+
+  usage-start: "%prefix%&#FF0000Uso: /christmas winter start <level> <world/all> <time>"
+  usage-stop: "%prefix%&#FF0000Uso: /christmas winter stop <world/all>"
+  usage-info: "%prefix%&#FF0000Uso: /christmas winter info <world>"
+
+  list-header: "%prefix%&aMundos con efecto de nieve activo:"
+  list-format: "%info%"
+
+  help-header: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬ &#FFFFFF&lSistema de Invierno &#FF0000&l▬▬▬▬▬▬▬▬▬▬▬"
+  help-commands:
+    - "&#FFD700• /christmas winter start <level> <world/all> <time>"
+    - "  &#FFFFFF- Inicia el efecto de nieve"
+    - "  &#FFFFFF- Niveles:"
+    - "    &#FFD7001-3: &#FFFFFFNieve visual básica"
+    - "    &#FFD7004-6: &#FFFFFF+ Agua se congela (radio 50)"
+    - "    &#FFD7007-9: &#FFFFFF+ Lava a obsidiana (radio 100)"
+    - "    &#FFD70010: &#FFFFFF+ Efecto intenso (radio 150)"
+    - "  &#FFFFFF- Tiempo: 30s, 5m, 1h, -1 (infinito)"
+    - ""
+    - "&#FFD700• /christmas winter stop <world/all>"
+    - "  &#FFFFFF- Detiene el efecto de nieve"
+    - ""
+    - "&#FFD700• /christmas winter info <world>"
+    - "  &#FFFFFF- Muestra información del efecto"
+    - ""
+    - "&#FFD700• /christmas winter list"
+    - "  &#FFFFFF- Lista mundos con efecto activo"
+  help-footer: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+help:
+  header: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬ &#FFFFFF&lRyzenChristmas &#FF0000&l▬▬▬▬▬▬▬▬▬▬▬"
+  commands:
+    - "&#FFD700• /advent &#FFFFFF- Abre el calendario de adviento"
+    - "&#FFD700• /calendar &#FFFFFF- Abre el calendario de adviento"
+    - "&#FFD700• /christmas &#FFFFFF- Abre el calendario de adviento"
+    - "&#FFD700• /cosmetics &#FFFFFF- Abre el menú de cosméticos"
+    - "&#FFD700• /christmas winter &#FFFFFF- Sistema de control de nieve"
+    - "&#FFD700• /gift &#FFFFFF- Sistema de cajas de regalos con animaciones"
+    - "&#FFD700• /ryzenchristmas reload &#FFFFFF- Recarga el plugin"
+    - "&#FFD700• /ryzenchristmas help &#FFFFFF- Muestra esta ayuda"
+  footer: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+errors:
+  no-permission: "%prefix%&#FF0000No tienes permiso para usar este comando."
+  player-only: "%prefix%&#FF0000Este comando solo puede ser usado por jugadores."
+  error-occurred: "%prefix%&#FF0000Ha ocurrido un error. Contacta a un administrador."
+  player-not-found: "%prefix%&#FF0000El jugador &#FFFFFF%player% &#FF0000no está conectado."
+
+reload:
+  success: "%prefix%&aConfiguración recargada correctamente."
+  failed: "%prefix%&#FF0000Error al recargar la configuración."

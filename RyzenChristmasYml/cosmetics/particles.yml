@@ -1,0 +1,1131 @@
+# RyzenChristmas - Particles Configuration
+# Optimized for performance while maintaining visual quality
+
+menu:
+  title: "<gradient:FFFF00:FFD700>✨ Particle Effects ✨</gradient>"
+  size: 54
+  
+  decoration:
+    filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+    
+    border:
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 45, 46, 47, 48, 50, 51, 52, 53]
+      material: "YELLOW_STAINED_GLASS_PANE"
+      name: " "
+      glow: false
+  
+  back_button:
+    slot: 49
+    material: "ARROW"
+    name: "<gradient:FF0000:FF5555>← Back</gradient>"
+    lore:
+      - ""
+      - "&7Return to main menu"
+    sound:
+      type: "BLOCK_WOODEN_BUTTON_CLICK_ON"
+      volume: 1.0
+      pitch: 1.0
+
+particles:
+  snow_aura:
+    slot: 10
+    display:
+      unlocked:
+        material: "SNOW_BLOCK"
+        name: "<gradient:FFFFFF:AAFFFF>❄ Snow Aura</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Gentle snowflakes falling"
+          - "&7around you creating a"
+          - "&7winter wonderland effect"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Snow Aura"
+        glow: false
+        lore:
+          - ""
+          - "&7Gentle snowflakes falling"
+          - "&7around you"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "SNOW_BLOCK"
+        name: "&a✔ Snow Aura"
+        glow: true
+        lore:
+          - ""
+          - "&7Gentle snowflakes falling"
+          - "&7around you"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "COMMON"
+    unlock-by-default: true
+    effect:
+      type: "ORBIT"
+      particle: "SNOWFLAKE"
+      count: 2
+      speed: 0.02
+      radius: 1.2
+      height-offset: 1.0
+      update-interval: 3
+      pattern: "CIRCLE"
+
+  flame_wings:
+    slot: 11
+    display:
+      unlocked:
+        material: "BLAZE_POWDER"
+        name: "<gradient:FF5555:FFAA00>🔥 Flame Wings</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Majestic wings of fire"
+          - "&7that spread behind you"
+          - "&7like a phoenix"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Flame Wings"
+        glow: false
+        lore:
+          - ""
+          - "&7Majestic wings of fire"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "BLAZE_POWDER"
+        name: "&a✔ Flame Wings"
+        glow: true
+        lore:
+          - ""
+          - "&7Majestic wings of fire"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "EPIC"
+    unlock-by-default: false
+    effect:
+      type: "WINGS"
+      particle: "FLAME"
+      count: 1
+      speed: 0.02
+      wing-spread: 1.0
+      wing-height: 0.7
+      update-interval: 2
+      animation: "FLAP"
+
+  heart_trail:
+    slot: 12
+    display:
+      unlocked:
+        material: "PINK_DYE"
+        name: "<gradient:FF69B4:FFB6C1>❤ Heart Trail</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Spread the love with"
+          - "&7floating hearts that"
+          - "&7follow your every step"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Heart Trail"
+        glow: false
+        lore:
+          - ""
+          - "&7Spread the love with hearts"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PINK_DYE"
+        name: "&a✔ Heart Trail"
+        glow: true
+        lore:
+          - ""
+          - "&7Spread the love with hearts"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "RARE"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "HEART"
+      count: 1
+      speed: 0.03
+      radius: 0.7
+      height-offset: 1.3
+      update-interval: 8
+      pattern: "HELIX"
+
+  enchanted_aura:
+    slot: 13
+    display:
+      unlocked:
+        material: "ENCHANTING_TABLE"
+        name: "<gradient:9370DB:DA70D6>✨ Enchanted Aura</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Mystical enchantment particles"
+          - "&7swirling around you with"
+          - "&7magical energy"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Enchanted Aura"
+        glow: false
+        lore:
+          - ""
+          - "&7Mystical enchantment particles"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "ENCHANTING_TABLE"
+        name: "&a✔ Enchanted Aura"
+        glow: true
+        lore:
+          - ""
+          - "&7Mystical enchantment particles"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "ENCHANTMENT_TABLE"
+      count: 3
+      speed: 0.08
+      radius: 1.5
+      height-offset: 1.0
+      update-interval: 2
+      pattern: "SPIRAL"
+
+  rainbow_spiral:
+    slot: 14
+    display:
+      unlocked:
+        material: "PRISMARINE_CRYSTALS"
+        name: "<gradient:FF0000:FF7F00>R<gradient:FFFF00:00FF00>a<gradient:0000FF:8B00FF>i</gradient>nbow Spiral"
+        glow: true
+        lore:
+          - ""
+          - "&7A mesmerizing rainbow"
+          - "&7spiral that rotates"
+          - "&7around your body"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Rainbow Spiral"
+        glow: false
+        lore:
+          - ""
+          - "&7Mesmerizing rainbow spiral"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PRISMARINE_CRYSTALS"
+        name: "&a✔ Rainbow Spiral"
+        glow: true
+        lore:
+          - ""
+          - "&7Mesmerizing rainbow spiral"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "REDSTONE"
+      count: 1
+      speed: 0.0
+      radius: 1.3
+      height-offset: 0.0
+      update-interval: 2
+      pattern: "RAINBOW_SPIRAL"
+      rainbow: true
+
+  frost_nova:
+    slot: 15
+    display:
+      unlocked:
+        material: "ICE"
+        name: "<gradient:00FFFF:AAFFFF>❄ Frost Nova</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Icy particles burst"
+          - "&7outward in waves"
+          - "&7freezing the air around you"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Frost Nova"
+        glow: false
+        lore:
+          - ""
+          - "&7Icy particles burst outward"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "ICE"
+        name: "&a✔ Frost Nova"
+        glow: true
+        lore:
+          - ""
+          - "&7Icy particles burst outward"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "RARE"
+    unlock-by-default: false
+    effect:
+      type: "PULSE"
+      particle: "SNOWFLAKE"
+      count: 10
+      speed: 0.15
+      radius: 1.5
+      height-offset: 1.0
+      update-interval: 25
+      pattern: "WAVE"
+
+  electric_storm:
+    slot: 16
+    display:
+      unlocked:
+        material: "END_ROD"
+        name: "<gradient:FFFF00:FFFFFF>⚡ Electric Storm</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Electric sparks crackle"
+          - "&7and dance around you"
+          - "&7with raw energy"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Electric Storm"
+        glow: false
+        lore:
+          - ""
+          - "&7Electric sparks crackle"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "END_ROD"
+        name: "&a✔ Electric Storm"
+        glow: true
+        lore:
+          - ""
+          - "&7Electric sparks crackle"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "EPIC"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "END_ROD"
+      count: 2
+      speed: 0.1
+      radius: 0.8
+      height-offset: 1.3
+      update-interval: 4
+      pattern: "RANDOM"
+
+  angelic_halo:
+    slot: 19
+    display:
+      unlocked:
+        material: "GLOWSTONE_DUST"
+        name: "<gradient:FFD700:FFFF00>👼 Angelic Halo</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A divine golden ring"
+          - "&7floats above your head"
+          - "&7shining with holy light"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Angelic Halo"
+        glow: false
+        lore:
+          - ""
+          - "&7A divine golden ring"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "GLOWSTONE_DUST"
+        name: "&a✔ Angelic Halo"
+        glow: true
+        lore:
+          - ""
+          - "&7A divine golden ring"
+          - ""
+          - "&8▸ Rarity: &6Legendary"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    effect:
+      type: "HALO"
+      particle: "END_ROD"
+      count: 1
+      speed: 0.0
+      radius: 0.5
+      height-offset: 2.2
+      update-interval: 2
+      pattern: "CIRCLE"
+
+  void_walker:
+    slot: 20
+    display:
+      unlocked:
+        material: "ENDER_PEARL"
+        name: "<gradient:8B008B:4B0082>🌌 Void Walker</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Portal particles swirl"
+          - "&7as if you're walking"
+          - "&7between dimensions"
+          - ""
+          - "&8▸ Rarity: &5Mythic"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Void Walker"
+        glow: false
+        lore:
+          - ""
+          - "&7Portal particles swirl"
+          - ""
+          - "&8▸ Rarity: &5Mythic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "ENDER_PEARL"
+        name: "&a✔ Void Walker"
+        glow: true
+        lore:
+          - ""
+          - "&7Portal particles swirl"
+          - ""
+          - "&8▸ Rarity: &5Mythic"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "MYTHIC"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "PORTAL"
+      count: 5
+      speed: 0.3
+      radius: 1.0
+      height-offset: 1.0
+      update-interval: 2
+      pattern: "HELIX"
+
+  cherry_blossom:
+    slot: 21
+    display:
+      unlocked:
+        material: "PINK_PETALS"
+        name: "<gradient:FFB6C1:FFC0CB>🌸 Cherry Blossom</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Delicate pink petals"
+          - "&7gently fall around you"
+          - "&7like spring has arrived"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&a► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Cherry Blossom"
+        glow: false
+        lore:
+          - ""
+          - "&7Delicate pink petals"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PINK_PETALS"
+        name: "&a✔ Cherry Blossom"
+        glow: true
+        lore:
+          - ""
+          - "&7Delicate pink petals"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e► Click to unequip"
+    rarity: "RARE"
+    unlock-by-default: false
+    effect:
+      type: "RAIN"
+      particle: "CHERRY_LEAVES"
+      count: 1
+      speed: 0.03
+      radius: 1.5
+      height-offset: 2.2
+      update-interval: 5
+      pattern: "FALLING"
+  size: 54
+  
+  decoration:
+    filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+    
+    border:
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 45, 46, 47, 48, 50, 51, 52, 53]
+      material: "YELLOW_STAINED_GLASS_PANE"
+      name: " "
+      glow: false
+  
+  back_button:
+    slot: 49
+    material: "ARROW"
+    name: "&c&l← Back"
+    lore:
+      - ""
+      - "&7Return to main menu"
+    sound:
+      type: "BLOCK_WOODEN_BUTTON_CLICK_ON"
+      volume: 1.0
+      pitch: 1.0
+
+particles:
+  # ===== SNOW AURA =====
+  snow_aura:
+    slot: 10
+    display:
+      unlocked:
+        material: "SNOW_BLOCK"
+        name: "&#FFFFFF&l❄ Snow Aura"
+        glow: true
+        lore:
+          - ""
+          - "&7Gentle snowflakes falling"
+          - "&7around you creating a"
+          - "&7winter wonderland effect"
+          - ""
+          - "&8▸ Rarity: &#FFFFFFCommon"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Snow Aura"
+        glow: false
+        lore:
+          - ""
+          - "&7Gentle snowflakes falling"
+          - "&7around you"
+          - ""
+          - "&8▸ Rarity: &#FFFFFFCommon"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "SNOW_BLOCK"
+        name: "&#00FF00&l✔ Snow Aura"
+        glow: true
+        lore:
+          - ""
+          - "&7Gentle snowflakes falling"
+          - "&7around you"
+          - ""
+          - "&8▸ Rarity: &#FFFFFFCommon"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "COMMON"
+    unlock-by-default: true
+    effect:
+      type: "ORBIT"
+      particle: "SNOWFLAKE"
+      count: 3
+      speed: 0.02
+      radius: 1.5
+      height-offset: 1.0
+      update-interval: 2
+      pattern: "CIRCLE"
+
+  # ===== FLAME WINGS =====
+  flame_wings:
+    slot: 11
+    display:
+      unlocked:
+        material: "BLAZE_POWDER"
+        name: "&#FF5555&l🔥 Flame Wings"
+        glow: true
+        lore:
+          - ""
+          - "&7Majestic wings of fire"
+          - "&7that spread behind you"
+          - "&7like a phoenix"
+          - ""
+          - "&8▸ Rarity: &#FF5555Epic"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Flame Wings"
+        glow: false
+        lore:
+          - ""
+          - "&7Majestic wings of fire"
+          - ""
+          - "&8▸ Rarity: &#FF5555Epic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "BLAZE_POWDER"
+        name: "&#00FF00&l✔ Flame Wings"
+        glow: true
+        lore:
+          - ""
+          - "&7Majestic wings of fire"
+          - ""
+          - "&8▸ Rarity: &#FF5555Epic"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "EPIC"
+    unlock-by-default: false
+    effect:
+      type: "WINGS"
+      particle: "FLAME"
+      count: 2
+      speed: 0.05
+      wing-spread: 1.2
+      wing-height: 0.8
+      update-interval: 1
+      animation: "FLAP"
+
+  # ===== HEART TRAIL =====
+  heart_trail:
+    slot: 12
+    display:
+      unlocked:
+        material: "PINK_DYE"
+        name: "&#FF69B4&l❤ Heart Trail"
+        glow: true
+        lore:
+          - ""
+          - "&7Spread the love with"
+          - "&7floating hearts that"
+          - "&7follow your every step"
+          - ""
+          - "&8▸ Rarity: &#FF69B4Rare"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Heart Trail"
+        glow: false
+        lore:
+          - ""
+          - "&7Spread the love with hearts"
+          - ""
+          - "&8▸ Rarity: &#FF69B4Rare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PINK_DYE"
+        name: "&#00FF00&l✔ Heart Trail"
+        glow: true
+        lore:
+          - ""
+          - "&7Spread the love with hearts"
+          - ""
+          - "&8▸ Rarity: &#FF69B4Rare"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "RARE"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "HEART"
+      count: 1
+      speed: 0.03
+      radius: 0.8
+      height-offset: 1.5
+      update-interval: 5
+      pattern: "HELIX"
+
+  # ===== ENCHANTED AURA =====
+  enchanted_aura:
+    slot: 13
+    display:
+      unlocked:
+        material: "ENCHANTING_TABLE"
+        name: "&#9370DB&l✨ Enchanted Aura"
+        glow: true
+        lore:
+          - ""
+          - "&7Mystical enchantment particles"
+          - "&7swirling around you with"
+          - "&7magical energy"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Enchanted Aura"
+        glow: false
+        lore:
+          - ""
+          - "&7Mystical enchantment particles"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "ENCHANTING_TABLE"
+        name: "&#00FF00&l✔ Enchanted Aura"
+        glow: true
+        lore:
+          - ""
+          - "&7Mystical enchantment particles"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "ENCHANTMENT_TABLE"
+      count: 5
+      speed: 0.1
+      radius: 2.0
+      height-offset: 1.0
+      update-interval: 1
+      pattern: "SPIRAL"
+
+  # ===== RAINBOW SPIRAL =====
+  rainbow_spiral:
+    slot: 14
+    display:
+      unlocked:
+        material: "PRISMARINE_CRYSTALS"
+        name: "&c&lR&#FF7F00&la&#FFFF00&li&#00FF00&ln&#0000FF&lb&#8B00FF&lo&c&lw &#FFFFFF&lSpiral"
+        glow: true
+        lore:
+          - ""
+          - "&7A mesmerizing rainbow"
+          - "&7spiral that rotates"
+          - "&7around your body"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Rainbow Spiral"
+        glow: false
+        lore:
+          - ""
+          - "&7Mesmerizing rainbow spiral"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PRISMARINE_CRYSTALS"
+        name: "&#00FF00&l✔ Rainbow Spiral"
+        glow: true
+        lore:
+          - ""
+          - "&7Mesmerizing rainbow spiral"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "REDSTONE"
+      count: 1
+      speed: 0.0
+      radius: 1.5
+      height-offset: 0.0
+      update-interval: 1
+      pattern: "RAINBOW_SPIRAL"
+      rainbow: true
+
+  # ===== FROST NOVA =====
+  frost_nova:
+    slot: 15
+    display:
+      unlocked:
+        material: "ICE"
+        name: "&#00FFFF&l❄ Frost Nova"
+        glow: true
+        lore:
+          - ""
+          - "&7Icy particles burst"
+          - "&7outward in waves"
+          - "&7freezing the air around you"
+          - ""
+          - "&8▸ Rarity: &#00FFFFRare"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Frost Nova"
+        glow: false
+        lore:
+          - ""
+          - "&7Icy particles burst outward"
+          - ""
+          - "&8▸ Rarity: &#00FFFFRare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "ICE"
+        name: "&#00FF00&l✔ Frost Nova"
+        glow: true
+        lore:
+          - ""
+          - "&7Icy particles burst outward"
+          - ""
+          - "&8▸ Rarity: &#00FFFFRare"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "RARE"
+    unlock-by-default: false
+    effect:
+      type: "PULSE"
+      particle: "SNOWFLAKE"
+      count: 15
+      speed: 0.2
+      radius: 2.0
+      height-offset: 1.0
+      update-interval: 20
+      pattern: "WAVE"
+
+  # ===== ELECTRIC STORM =====
+  electric_storm:
+    slot: 16
+    display:
+      unlocked:
+        material: "END_ROD"
+        name: "&#FFFF00&l⚡ Electric Storm"
+        glow: true
+        lore:
+          - ""
+          - "&7Electric sparks crackle"
+          - "&7and dance around you"
+          - "&7with raw energy"
+          - ""
+          - "&8▸ Rarity: &#FF5555Epic"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Electric Storm"
+        glow: false
+        lore:
+          - ""
+          - "&7Electric sparks crackle"
+          - ""
+          - "&8▸ Rarity: &#FF5555Epic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "END_ROD"
+        name: "&#00FF00&l✔ Electric Storm"
+        glow: true
+        lore:
+          - ""
+          - "&7Electric sparks crackle"
+          - ""
+          - "&8▸ Rarity: &#FF5555Epic"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "EPIC"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "END_ROD"
+      count: 3
+      speed: 0.15
+      radius: 1.0
+      height-offset: 1.5
+      update-interval: 2
+      pattern: "RANDOM"
+
+  # ===== ANGELIC HALO =====
+  angelic_halo:
+    slot: 19
+    display:
+      unlocked:
+        material: "GLOWSTONE_DUST"
+        name: "&#FFD700&l👼 Angelic Halo"
+        glow: true
+        lore:
+          - ""
+          - "&7A divine golden ring"
+          - "&7floats above your head"
+          - "&7shining with holy light"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Angelic Halo"
+        glow: false
+        lore:
+          - ""
+          - "&7A divine golden ring"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "GLOWSTONE_DUST"
+        name: "&#00FF00&l✔ Angelic Halo"
+        glow: true
+        lore:
+          - ""
+          - "&7A divine golden ring"
+          - ""
+          - "&8▸ Rarity: &#FFD700Legendary"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    effect:
+      type: "HALO"
+      particle: "END_ROD"
+      count: 1
+      speed: 0.0
+      radius: 0.5
+      height-offset: 2.3
+      update-interval: 1
+      pattern: "CIRCLE"
+
+  # ===== VOID WALKER =====
+  void_walker:
+    slot: 20
+    display:
+      unlocked:
+        material: "ENDER_PEARL"
+        name: "&#8B008B&l🌌 Void Walker"
+        glow: true
+        lore:
+          - ""
+          - "&7Portal particles swirl"
+          - "&7as if you're walking"
+          - "&7between dimensions"
+          - ""
+          - "&8▸ Rarity: &#8B008BMythic"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Void Walker"
+        glow: false
+        lore:
+          - ""
+          - "&7Portal particles swirl"
+          - ""
+          - "&8▸ Rarity: &#8B008BMythic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "ENDER_PEARL"
+        name: "&#00FF00&l✔ Void Walker"
+        glow: true
+        lore:
+          - ""
+          - "&7Portal particles swirl"
+          - ""
+          - "&8▸ Rarity: &#8B008BMythic"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "MYTHIC"
+    unlock-by-default: false
+    effect:
+      type: "ORBIT"
+      particle: "PORTAL"
+      count: 10
+      speed: 0.5
+      radius: 1.2
+      height-offset: 1.0
+      update-interval: 1
+      pattern: "HELIX"
+
+  # ===== CHERRY BLOSSOM =====
+  cherry_blossom:
+    slot: 21
+    display:
+      unlocked:
+        material: "PINK_PETALS"
+        name: "&9&l🌸 Cherry Blossom"
+        glow: true
+        lore:
+          - ""
+          - "&7Delicate pink petals"
+          - "&7gently fall around you"
+          - "&7like spring has arrived"
+          - ""
+          - "&8▸ Rarity: &9Rare"
+          - "&8▸ Status: &#00FF00Unlocked"
+          - ""
+          - "&#00FF00► Click to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7 Cherry Blossom"
+        glow: false
+        lore:
+          - ""
+          - "&7Delicate pink petals"
+          - ""
+          - "&8▸ Rarity: &9Rare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PINK_PETALS"
+        name: "&#00FF00&l✔ Cherry Blossom"
+        glow: true
+        lore:
+          - ""
+          - "&7Delicate pink petals"
+          - ""
+          - "&8▸ Rarity: &9Rare"
+          - "&8▸ Status: &#00FF00Equipped"
+          - ""
+          - "&#FFFF00► Click to unequip"
+    rarity: "RARE"
+    unlock-by-default: false
+    effect:
+      type: "RAIN"
+      particle: "CHERRY_LEAVES"
+      count: 2
+      speed: 0.05
+      radius: 2.0
+      height-offset: 2.5
+      update-inte
+      pattern: "FALLING"

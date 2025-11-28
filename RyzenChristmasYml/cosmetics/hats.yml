@@ -1,0 +1,412 @@
+menu:
+  title: "&#FF0000Hats Menu 🎩"
+  size: 54
+
+  decoration:
+    filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+
+    border:
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 45, 46, 47, 48, 50, 51, 52, 53]
+      material: "RED_STAINED_GLASS_PANE"
+      name: " "
+      glow: false
+
+  back_button:
+    slot: 49
+    material: "ARROW"
+    name: "<gradient:FF0000:FF5555>← Back</gradient>"
+    lore:
+      - ""
+      - "&7Return to main menu"
+    sound:
+      type: "BLOCK_WOODEN_BUTTON_CLICK_ON"
+      volume: 1.0
+      pitch: 1.0
+
+hats:
+  # ===== SANTA HAT =====
+  santa_hat:
+    slot: 10
+    display:
+      unlocked:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY0YTEwZmJkYjQ5MTNjZjc1ZDU3YjZhZDU1Y2MwZTM0ZGUxYWYxZjMzODgyMTA2ZWFlMGY4ZWMwMGE2ZjY4In19fQ=="
+        name: "<gradient:FF0000:FFFFFF>🎅 Santa Hat</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7The iconic red hat"
+          - "&7that Santa Claus wears"
+          - "&7spreading Christmas joy"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&aClick to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Santa Hat"
+        glow: false
+        lore:
+          - ""
+          - "&7The iconic Santa hat"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY0YTEwZmJkYjQ5MTNjZjc1ZDU3YjZhZDU1Y2MwZTM0ZGUxYWYxZjMzODgyMTA2ZWFlMGY4ZWMwMGE2ZjY4In19fQ=="
+        name: "&a✓ Santa Hat"
+        glow: true
+        lore:
+          - ""
+          - "&7The iconic Santa hat"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&eCurrently wearing!"
+    rarity: "COMMON"
+    unlock-by-default: true
+    hat:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY0YTEwZmJkYjQ5MTNjZjc1ZDU3YjZhZDU1Y2MwZTM0ZGUxYWYxZjMzODgyMTA2ZWFlMGY4ZWMwMGE2ZjY4In19fQ=="
+      particle: "SNOWFLAKE"
+      particle-interval: 40
+      particle-enabled: true
+
+  # ===== ELF HAT =====
+  elf_hat:
+    slot: 11
+    display:
+      unlocked:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmMzYjJlMmEzOGQyZjZiNzkzNDVhY2I1YmUzZDEzZWNkN2MzMmE2NjI4YTMyYTNhNDQ0NzE0NWEyODJjYzJjMiJ9fX0="
+        name: "<gradient:00FF00:90EE90>🧝 Elf Hat</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A pointy green hat"
+          - "&7worn by Santa's helpers"
+          - "&7in the North Pole"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&aClick to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Elf Hat"
+        glow: false
+        lore:
+          - ""
+          - "&7A pointy green hat"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmMzYjJlMmEzOGQyZjZiNzkzNDVhY2I1YmUzZDEzZWNkN2MzMmE2NjI4YTMyYTNhNDQ0NzE0NWEyODJjYzJjMiJ9fX0="
+        name: "&a✓ Elf Hat"
+        glow: true
+        lore:
+          - ""
+          - "&7A pointy green hat"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&eCurrently wearing!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    hat:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmMzYjJlMmEzOGQyZjZiNzkzNDVhY2I1YmUzZDEzZWNkN2MzMmE2NjI4YTMyYTNhNDQ0NzE0NWEyODJjYzJjMiJ9fX0="
+      particle: "VILLAGER_HAPPY"
+      particle-interval: 50
+      particle-enabled: true
+
+  # ===== REINDEER ANTLERS =====
+  reindeer_antlers:
+    slot: 12
+    display:
+      unlocked:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI1Y2M1NTk2NjhiYjlkYWEwYTU0YTBiNDU4ZGE0MzVmM2I3YjZmMDAwYjA2ZTFlNzgxMTAwNDVmODY5OWY4MyJ9fX0="
+        name: "<gradient:8B4513:D2691E>🦌 Reindeer Antlers</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Majestic antlers like"
+          - "&7Rudolph and his friends"
+          - "&7from Santa's sleigh"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&aClick to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Reindeer Antlers"
+        glow: false
+        lore:
+          - ""
+          - "&7Majestic antlers"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI1Y2M1NTk2NjhiYjlkYWEwYTU0YTBiNDU4ZGE0MzVmM2I3YjZmMDAwYjA2ZTFlNzgxMTAwNDVmODY5OWY4MyJ9fX0="
+        name: "&a✓ Reindeer Antlers"
+        glow: true
+        lore:
+          - ""
+          - "&7Majestic antlers"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&eCurrently wearing!"
+    rarity: "RARE"
+    unlock-by-default: false
+    hat:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI1Y2M1NTk2NjhiYjlkYWEwYTU0YTBiNDU4ZGE0MzVmM2I3YjZmMDAwYjA2ZTFlNzgxMTAwNDVmODY5OWY4MyJ9fX0="
+      particle: "SNOWFLAKE"
+      particle-interval: 35
+      particle-enabled: true
+
+  # ===== SNOWMAN HEAD =====
+  snowman_head:
+    slot: 13
+    display:
+      unlocked:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI3Njk1YmVlMmJhYmY5YmFlZjExYWUxOWZlNWY4MTdmYTA4OGNkNTJjNGM0NzNjYzdiNDQxZDVjM2Y1MGZlIn19fQ=="
+        name: "<gradient:FFFFFF:E0F7FA>⛄ Snowman Head</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Become a snowman with"
+          - "&7this frosty head complete"
+          - "&7with carrot nose!"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Type: &fWinter"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&aClick to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Snowman Head"
+        glow: false
+        lore:
+          - ""
+          - "&7Become a snowman"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI3Njk1YmVlMmJhYmY5YmFlZjExYWUxOWZlNWY4MTdmYTA4OGNkNTJjNGM0NzNjYzdiNDQxZDVjM2Y1MGZlIn19fQ=="
+        name: "&a✓ Snowman Head"
+        glow: true
+        lore:
+          - ""
+          - "&7Become a snowman"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Type: &fWinter"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&eCurrently wearing!"
+    rarity: "EPIC"
+    unlock-by-default: false
+    hat:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI3Njk1YmVlMmJhYmY5YmFlZjExYWUxOWZlNWY4MTdmYTA4OGNkNTJjNGM0NzNjYzdiNDQxZDVjM2Y1MGZlIn19fQ=="
+      particle: "SNOWFLAKE"
+      particle-interval: 25
+      particle-enabled: true
+
+  # ===== PRESENT BOX =====
+  present_box:
+    slot: 14
+    display:
+      unlocked:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI5MTljNjczMTdjNzY3ODQzOGZmNTIwYzk4ZGRlMGUzYjRkNjg3NjljODkzOGE1YTNkZTI5NjhlZGZjNzMxNCJ9fX0="
+        name: "<gradient:FF0000:00FF00>🎁 Present Box</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Wear a wrapped gift"
+          - "&7on your head and become"
+          - "&7the ultimate surprise!"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&aClick to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Present Box"
+        glow: false
+        lore:
+          - ""
+          - "&7Wear a wrapped gift"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI5MTljNjczMTdjNzY3ODQzOGZmNTIwYzk4ZGRlMGUzYjRkNjg3NjljODkzOGE1YTNkZTI5NjhlZGZjNzMxNCJ9fX0="
+        name: "&a✓ Present Box"
+        glow: true
+        lore:
+          - ""
+          - "&7Wear a wrapped gift"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&eCurrently wearing!"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    hat:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI5MTljNjczMTdjNzY3ODQzOGZmNTIwYzk4ZGRlMGUzYjRkNjg3NjljODkzOGE1YTNkZTI5NjhlZGZjNzMxNCJ9fX0="
+      particle: "VILLAGER_HAPPY"
+      particle-interval: 20
+      particle-enabled: true
+
+  # ===== GINGERBREAD HEAD =====
+  gingerbread_head:
+    slot: 15
+    display:
+      unlocked:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc2ZWFhMDI0ODQ1ZmE1ZTRhNmE2MTI3NmNlZWNjYjhiNTEwMDZmNzgwNzk0OGY5ZTAyZjMzMWYyMTAyMGM2YyJ9fX0="
+        name: "<gradient:8B4513:D2691E>🍪 Gingerbread Head</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Transform into a delicious"
+          - "&7gingerbread cookie with"
+          - "&7a sweet smile!"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&aClick to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Gingerbread Head"
+        glow: false
+        lore:
+          - ""
+          - "&7Transform into gingerbread"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc2ZWFhMDI0ODQ1ZmE1ZTRhNmE2MTI3NmNlZWNjYjhiNTEwMDZmNzgwNzk0OGY5ZTAyZjMzMWYyMTAyMGM2YyJ9fX0="
+        name: "&a✓ Gingerbread Head"
+        glow: true
+        lore:
+          - ""
+          - "&7Transform into gingerbread"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&eCurrently wearing!"
+    rarity: "RARE"
+    unlock-by-default: false
+    hat:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc2ZWFhMDI0ODQ1ZmE1ZTRhNmE2MTI3NmNlZWNjYjhiNTEwMDZmNzgwNzk0OGY5ZTAyZjMzMWYyMTAyMGM2YyJ9fX0="
+      particle: "HEART"
+      particle-interval: 45
+      particle-enabled: true
+
+  # ===== CANDY CANE HAT =====
+  candy_cane_hat:
+    slot: 16
+    display:
+      unlocked:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1ZmY5NzE0NDMyZjZjNGJlNWJiYWJkOWYyN2UyOGZlZTAwMjVmNzc0MzI0MDBhYTk5NTFkZjE1ZmVkMTY5OCJ9fX0="
+        name: "<gradient:FF0000:FFFFFF>🍬 Candy Cane Hat</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A festive hat made"
+          - "&7entirely of peppermint"
+          - "&7candy canes!"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&aClick to equip"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Candy Cane Hat"
+        glow: false
+        lore:
+          - ""
+          - "&7A festive candy cane hat"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PLAYER_HEAD"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1ZmY5NzE0NDMyZjZjNGJlNWJiYWJkOWYyN2UyOGZlZTAwMjVmNzc0MzI0MDBhYTk5NTFkZjE1ZmVkMTY5OCJ9fX0="
+        name: "&a✓ Candy Cane Hat"
+        glow: true
+        lore:
+          - ""
+          - "&7A festive candy cane hat"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Type: &cChristmas"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&eCurrently wearing!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    hat:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1ZmY5NzE0NDMyZjZjNGJlNWJiYWJkOWYyN2UyOGZlZTAwMjVmNzc0MzI0MDBhYTk5NTFkZjE1ZmVkMTY5OCJ9fX0="
+      particle: "HEART"
+      particle-interval: 50
+      particle-enabled: true

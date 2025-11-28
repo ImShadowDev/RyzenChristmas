@@ -1,0 +1,126 @@
+prefix: "&#FF0000&l[&#FFFFFF&lChristmas&#FF0000&l] &#FFFFFF"
+
+advent:
+  reward-claimed: "%prefix%&aYou have claimed the reward for day %day%!"
+  already-claimed: "%prefix%&#FF0000You have already claimed today's reward."
+  not-available: "%prefix%&#FF0000This day is not yet available."
+  day-missed: "%prefix%&#FFFF00You missed the reward for day %day%."
+  must-claim-previous: "%prefix%&#FF0000You must claim previous days first."
+
+  notification:
+    join: "%prefix%&#FFFF00You have %days% day(s) available to claim!"
+    new-day: "%prefix%&aA new calendar day is available!"
+
+  calendar-opened: "%prefix%Advent calendar opened."
+  calendar-not-active: "%prefix%&#FF0000The advent calendar is not currently active."
+
+  mode:
+    classic: "Classic"
+    accumulative: "Accumulative"
+    progressive: "Progressive"
+
+cosmetics:
+  menu-opened: "%prefix%Cosmetics menu opened."
+  equipped: "%prefix%&aYou have equipped: &#FFFFFF%cosmetic%"
+  unequipped: "%prefix%&#FFFF00You have unequipped: &#FFFFFF%type%"
+  unequipped-all: "%prefix%&#FFFF00All cosmetics have been unequipped."
+  not-unlocked: "%prefix%&#FF0000You haven't unlocked this cosmetic."
+  already-equipped: "%prefix%&#FFFF00You already have this cosmetic equipped."
+  unlocked: "%prefix%&aYou have unlocked: &#FFFFFF%cosmetic%&a!"
+  slot-occupied: "%prefix%&#FF0000Slot %slot% already has an item! Remove it first to equip this gadget."
+
+gifts:
+  given: "%prefix%&aYou have given &#FFFFFF%amount%x %box% &ato &#FFFFFF%player%&a."
+  received: "%prefix%&aYou have received &#FFFFFF%amount%x %box%&a!"
+  giveall-success: "%prefix%&aGiven &#FFFFFF%amount%x %box% &ato &#FFFFFF%players% player(s)&a."
+  box-not-found: "%prefix%&#FF0000The box &#FFFFFF%box% &#FF0000does not exist."
+  no-boxes: "%prefix%&#FFFF00There are no gift boxes loaded."
+  invalid-amount: "%prefix%&#FF0000Invalid amount. Use a number greater than 0."
+
+  usage-give: "%prefix%&#FF0000Usage: /gift give <player> <box_id> <amount>"
+  usage-giveall: "%prefix%&#FF0000Usage: /gift giveall <box_id> <amount>"
+
+  list-header: "%prefix%&aAvailable gift boxes:"
+  list-format: "  &#FFD700• &#FFFFFF%id% &#FFD700- %name%"
+
+  reload-success: "%prefix%&aGift boxes reloaded successfully."
+  reload-failed: "%prefix%&#FF0000Error reloading gift boxes."
+
+  help-header: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬ &#FFFFFF&lGift System &#FF0000&l▬▬▬▬▬▬▬▬▬▬▬"
+  help-commands:
+    - "&#FFD700• /gift give <player> <box_id> <amount>"
+    - "  &#FFFFFF- Give a gift box to a player"
+    - ""
+    - "&#FFD700• /gift giveall <box_id> <amount>"
+    - "  &#FFFFFF- Give boxes to all online players"
+    - ""
+    - "&#FFD700• /gift list"
+    - "  &#FFFFFF- List all available boxes"
+    - ""
+    - "&#FFD700• /gift reload"
+    - "  &#FFFFFF- Reload gift boxes"
+  help-footer: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+winter:
+  started: "%prefix%&aSnow effect started in &#FFFFFF%world% &awith level &#FFFFFF%level% &afor &#FFFFFF%time%&a."
+  started-all: "%prefix%&aSnow effect started in &#FFFFFFall worlds &awith level &#FFFFFF%level% &afor &#FFFFFF%time%&a."
+  stopped: "%prefix%&#FFFF00Snow effect stopped in &#FFFFFF%world%&#FFFF00."
+  stopped-all: "%prefix%&#FFFF00Snow effect stopped in &#FFFFFFall worlds&#FFFF00."
+  not-active: "%prefix%&#FF0000No active snow effect in &#FFFFFF%world%&#FF0000."
+  world-not-found: "%prefix%&#FF0000World &#FFFFFF%world% &#FF0000does not exist."
+  invalid-level: "%prefix%&#FF0000Invalid level. Use a number between 1 and 10."
+  invalid-time: "%prefix%&#FF0000Invalid time format. Use: 30s, 5m, 1h, or -1 for infinite."
+  no-active: "%prefix%&#FFFF00There are no active snow effects currently."
+
+  info: "%prefix%&aInformation for &#FFFFFF%world%&a:\n  &#FFD700Level: &#FFFFFF%level%\n  &#FFD700Time remaining: &#FFFFFF%remaining%"
+
+  usage-start: "%prefix%&#FF0000Usage: /christmas winter start <level> <world/all> <time>"
+  usage-stop: "%prefix%&#FF0000Usage: /christmas winter stop <world/all>"
+  usage-info: "%prefix%&#FF0000Usage: /christmas winter info <world>"
+
+  list-header: "%prefix%&aWorlds with active snow effect:"
+  list-format: "%info%"
+
+  help-header: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬ &#FFFFFF&lWinter System &#FF0000&l▬▬▬▬▬▬▬▬▬▬▬"
+  help-commands:
+    - "&#FFD700• /christmas winter start <level> <world/all> <time>"
+    - "  &#FFFFFF- Start the snow effect"
+    - "  &#FFFFFF- Levels:"
+    - "    &#FFD7001-3: &#FFFFFFBasic visual snow"
+    - "    &#FFD7004-6: &#FFFFFF+ Water freezes (radius 50)"
+    - "    &#FFD7007-9: &#FFFFFF+ Lava to obsidian (radius 100)"
+    - "    &#FFD70010: &#FFFFFF+ Intense effect (radius 150)"
+    - "  &#FFFFFF- Time: 30s, 5m, 1h, -1 (infinite)"
+    - ""
+    - "&#FFD700• /christmas winter stop <world/all>"
+    - "  &#FFFFFF- Stop the snow effect"
+    - ""
+    - "&#FFD700• /christmas winter info <world>"
+    - "  &#FFFFFF- Show effect information"
+    - ""
+    - "&#FFD700• /christmas winter list"
+    - "  &#FFFFFF- List worlds with active effect"
+  help-footer: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+help:
+  header: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬ &#FFFFFF&lRyzenChristmas &#FF0000&l▬▬▬▬▬▬▬▬▬▬▬"
+  commands:
+    - "&#FFD700• /advent &#FFFFFF- Open the advent calendar"
+    - "&#FFD700• /calendar &#FFFFFF- Open the advent calendar"
+    - "&#FFD700• /christmas &#FFFFFF- Open the advent calendar"
+    - "&#FFD700• /cosmetics &#FFFFFF- Open the cosmetics menu"
+    - "&#FFD700• /christmas winter &#FFFFFF- Snow control system"
+    - "&#FFD700• /gift &#FFFFFF- Gift box system with animations"
+    - "&#FFD700• /ryzenchristmas reload &#FFFFFF- Reload the plugin"
+    - "&#FFD700• /ryzenchristmas help &#FFFFFF- Show this help"
+  footer: "&#FF0000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+errors:
+  no-permission: "%prefix%&#FF0000You don't have permission to use this command."
+  player-only: "%prefix%&#FF0000This command can only be used by players."
+  error-occurred: "%prefix%&#FF0000An error has occurred. Contact an administrator."
+  player-not-found: "%prefix%&#FF0000Player &#FFFFFF%player% &#FF0000is not online."
+
+reload:
+  success: "%prefix%&aConfiguration reloaded successfully."
+  failed: "%prefix%&#FF0000Error reloading configuration."

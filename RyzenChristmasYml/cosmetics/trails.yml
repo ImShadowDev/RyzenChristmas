@@ -1,0 +1,571 @@
+menu:
+  title: "<gradient:FFFFFF:00FFFF>❄ Christmas Trails ❄</gradient>"
+  size: 54
+
+  decoration:
+    filler:
+      material: BLACK_STAINED_GLASS_PANE
+      name: " "
+
+    border:
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 45, 46, 47, 48, 50, 51, 52, 53]
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: " "
+      glow: false
+
+  back_button:
+    slot: 49
+    material: ARROW
+    name: "<gradient:FF0000:FF5555>← Back</gradient>"
+    lore:
+      - ""
+      - "&7Return to main menu"
+    sound:
+      type: BLOCK_WOODEN_BUTTON_CLICK_ON
+      volume: 1.0
+      pitch: 1.0
+
+trails:
+
+  snowfall:
+    slot: 10
+    rarity: COMMON
+    unlock-by-default: true
+
+    trail:
+      type: SIMPLE
+      particle: SNOW_SHOVEL
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.2
+      offset-y: 0.1
+      offset-z: 0.2
+      update-interval: 4
+      height-offset: 0.0
+      spacing: 0.4
+      rainbow: false
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: SNOWBALL
+        name: "<gradient:FFFFFF:E0F7FA>❄ Snowfall Trail</gradient> &a✓"
+        lore:
+          - ""
+          - "&7Leave a trail of falling snow"
+          - "&7behind you as you walk"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &fCommon"
+        glow: true
+
+      unlocked:
+        material: SNOWBALL
+        name: "<gradient:FFFFFF:E0F7FA>❄ Snowfall Trail</gradient>"
+        lore:
+          - ""
+          - "&7Leave a trail of falling snow"
+          - "&7behind you as you walk"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &fCommon"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7❄ Snowfall Trail &c✖"
+        lore:
+          - ""
+          - "&7Leave a trail of falling snow"
+          - "&7behind you as you walk"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &fCommon"
+        glow: false
+
+  starlight:
+    slot: 11
+    rarity: RARE
+    unlock-by-default: false
+
+    trail:
+      type: SIMPLE
+      particle: END_ROD
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.0
+      offset-y: 0.0
+      offset-z: 0.0
+      update-interval: 3
+      height-offset: 0.2
+      spacing: 0.4
+      rainbow: false
+      sound: BLOCK_AMETHYST_BLOCK_CHIME
+      sound-interval: 60
+
+    display:
+      equipped:
+        material: NETHER_STAR
+        name: "<gradient:FFD700:FFFF00>⭐ Starlight Trail</gradient> &a✓"
+        lore:
+          - ""
+          - "&eLeave a trail of shimmering"
+          - "&estars in your path"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: true
+
+      unlocked:
+        material: NETHER_STAR
+        name: "<gradient:FFD700:FFFF00>⭐ Starlight Trail</gradient>"
+        lore:
+          - ""
+          - "&eLeave a trail of shimmering"
+          - "&estars in your path"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7⭐ Starlight Trail &c✖"
+        lore:
+          - ""
+          - "&eLeave a trail of shimmering"
+          - "&estars in your path"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: false
+
+  candy_hearts:
+    slot: 12
+    rarity: RARE
+    unlock-by-default: false
+
+    trail:
+      type: SIMPLE
+      particle: HEART
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.0
+      offset-y: 0.0
+      offset-z: 0.0
+      update-interval: 5
+      height-offset: 0.3
+      spacing: 0.5
+      rainbow: false
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: PINK_WOOL
+        name: "<gradient:FF69B4:FFB6C1>❤ Candy Hearts Trail</gradient> &a✓"
+        lore:
+          - ""
+          - "&dSpread the love with a trail"
+          - "&dof candy-colored hearts"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: true
+
+      unlocked:
+        material: PINK_WOOL
+        name: "<gradient:FF69B4:FFB6C1>❤ Candy Hearts Trail</gradient>"
+        lore:
+          - ""
+          - "&dSpread the love with a trail"
+          - "&dof candy-colored hearts"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7❤ Candy Hearts Trail &c✖"
+        lore:
+          - ""
+          - "&dSpread the love with a trail"
+          - "&dof candy-colored hearts"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: false
+
+  rainbow_magic:
+    slot: 13
+    rarity: EPIC
+    unlock-by-default: false
+
+    trail:
+      type: RAINBOW
+      particle: REDSTONE
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.0
+      offset-y: 0.0
+      offset-z: 0.0
+      update-interval: 2
+      height-offset: 0.1
+      spacing: 0.3
+      rainbow: true
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: PRISMARINE_CRYSTALS
+        name: "<gradient:FF0000:FF7F00>R<gradient:FFFF00:00FF00>a<gradient:0000FF:9400D3>inbow</gradient> Magic &a✓"
+        lore:
+          - ""
+          - "&fLeave a magical rainbow trail"
+          - "&fthat shimmers with all colors"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: true
+
+      unlocked:
+        material: PRISMARINE_CRYSTALS
+        name: "<gradient:FF0000:FF7F00>R<gradient:FFFF00:00FF00>a<gradient:0000FF:9400D3>inbow</gradient> Magic"
+        lore:
+          - ""
+          - "&fLeave a magical rainbow trail"
+          - "&fthat shimmers with all colors"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7Rainbow Magic &c✖"
+        lore:
+          - ""
+          - "&fLeave a magical rainbow trail"
+          - "&fthat shimmers with all colors"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false
+
+  winter_helix:
+    slot: 14
+    rarity: EPIC
+    unlock-by-default: false
+
+    trail:
+      type: HELIX
+      particle: FIREWORKS_SPARK
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.0
+      offset-y: 0.0
+      offset-z: 0.0
+      update-interval: 2
+      height-offset: 0.0
+      spacing: 0.35
+      rainbow: false
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: LIGHT_BLUE_DYE
+        name: "<gradient:00FFFF:E0F7FA>❄ Winter Helix</gradient> &a✓"
+        lore:
+          - ""
+          - "&bA spiraling trail of frozen"
+          - "&bwater crystals"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: true
+
+      unlocked:
+        material: LIGHT_BLUE_DYE
+        name: "<gradient:00FFFF:E0F7FA>❄ Winter Helix</gradient>"
+        lore:
+          - ""
+          - "&bA spiraling trail of frozen"
+          - "&bwater crystals"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7❄ Winter Helix &c✖"
+        lore:
+          - ""
+          - "&bA spiraling trail of frozen"
+          - "&bwater crystals"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false
+
+  cosmic_christmas:
+    slot: 15
+    rarity: LEGENDARY
+    unlock-by-default: false
+
+    trail:
+      type: MAGIC
+      particle: REDSTONE
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.0
+      offset-y: 0.0
+      offset-z: 0.0
+      update-interval: 2
+      height-offset: 0.2
+      spacing: 0.3
+      rainbow: true
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: DRAGON_BREATH
+        name: "<gradient:FFD700:FFFF00>✨ Cosmic Christmas</gradient> &a✓"
+        lore:
+          - ""
+          - "&6The ultimate Christmas trail!"
+          - "&6A cosmic display of magic"
+          - "&6and wonder"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &6Legendary"
+        glow: true
+
+      unlocked:
+        material: DRAGON_BREATH
+        name: "<gradient:FFD700:FFFF00>✨ Cosmic Christmas</gradient>"
+        lore:
+          - ""
+          - "&6The ultimate Christmas trail!"
+          - "&6A cosmic display of magic"
+          - "&6and wonder"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &6Legendary"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7✨ Cosmic Christmas &c✖"
+        lore:
+          - ""
+          - "&6The ultimate Christmas trail!"
+          - "&6A cosmic display of magic"
+          - "&6and wonder"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &6Legendary"
+        glow: false
+
+  snow_footprints:
+    slot: 16
+    rarity: RARE
+    unlock-by-default: false
+
+    trail:
+      type: FOOTPRINTS
+      particle: SNOW_SHOVEL
+      particle-count: 2
+      particle-speed: 0.0
+      offset-x: 0.05
+      offset-y: 0.0
+      offset-z: 0.05
+      update-interval: 3
+      height-offset: 0.05
+      spacing: 0.5
+      rainbow: false
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: LEATHER_BOOTS
+        name: "<gradient:FFFFFF:D3D3D3>👣 Snow Footprints</gradient> &a✓"
+        lore:
+          - ""
+          - "&fLeave footprints in the snow"
+          - "&fas you walk"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: true
+
+      unlocked:
+        material: LEATHER_BOOTS
+        name: "<gradient:FFFFFF:D3D3D3>👣 Snow Footprints</gradient>"
+        lore:
+          - ""
+          - "&fLeave footprints in the snow"
+          - "&fas you walk"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7👣 Snow Footprints &c✖"
+        lore:
+          - ""
+          - "&fLeave footprints in the snow"
+          - "&fas you walk"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &bRare"
+        glow: false
+
+  twin_frost:
+    slot: 19
+    rarity: EPIC
+    unlock-by-default: false
+
+    trail:
+      type: DUAL
+      particle: FIREWORKS_SPARK
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.05
+      offset-y: 0.05
+      offset-z: 0.05
+      update-interval: 2
+      height-offset: 0.1
+      spacing: 0.4
+      rainbow: false
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: ICE
+        name: "<gradient:00FFFF:AAFFFF>❄ Twin Frost</gradient> &a✓"
+        lore:
+          - ""
+          - "&bA dual trail of icy sparks"
+          - "&bon both sides"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: true
+
+      unlocked:
+        material: ICE
+        name: "<gradient:00FFFF:AAFFFF>❄ Twin Frost</gradient>"
+        lore:
+          - ""
+          - "&bA dual trail of icy sparks"
+          - "&bon both sides"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7❄ Twin Frost &c✖"
+        lore:
+          - ""
+          - "&bA dual trail of icy sparks"
+          - "&bon both sides"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false
+
+  christmas_spiral:
+    slot: 20
+    rarity: EPIC
+    unlock-by-default: false
+
+    trail:
+      type: SPIRAL
+      particle: VILLAGER_HAPPY
+      particle-count: 1
+      particle-speed: 0.0
+      offset-x: 0.0
+      offset-y: 0.0
+      offset-z: 0.0
+      update-interval: 2
+      height-offset: 0.0
+      spacing: 0.35
+      rainbow: false
+      sound: NONE
+      sound-interval: 100
+
+    display:
+      equipped:
+        material: EMERALD
+        name: "<gradient:00FF00:90EE90>🎄 Christmas Spiral</gradient> &a✓"
+        lore:
+          - ""
+          - "&aA festive spiral of joy"
+          - "&aand happiness"
+          - ""
+          - "&a▸ Currently Equipped"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: true
+
+      unlocked:
+        material: EMERALD
+        name: "<gradient:00FF00:90EE90>🎄 Christmas Spiral</gradient>"
+        lore:
+          - ""
+          - "&aA festive spiral of joy"
+          - "&aand happiness"
+          - ""
+          - "&eClick to equip!"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false
+
+      locked:
+        material: GRAY_DYE
+        name: "&7🎄 Christmas Spiral &c✖"
+        lore:
+          - ""
+          - "&aA festive spiral of joy"
+          - "&aand happiness"
+          - ""
+          - "&c✖ Not Unlocked"
+          - ""
+          - "&8▸ &fRarity: &cEpic"
+        glow: false

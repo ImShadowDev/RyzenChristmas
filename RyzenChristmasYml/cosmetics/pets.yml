@@ -1,0 +1,589 @@
+menu:
+  title: "&#FF69B4Pets Menu 🐾"
+  size: 54
+
+  decoration:
+    filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+
+    border:
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 45, 46, 47, 48, 50, 51, 52, 53]
+      material: "PINK_STAINED_GLASS_PANE"
+      name: " "
+      glow: false
+
+  back_button:
+    slot: 49
+    material: "ARROW"
+    name: "<gradient:FF0000:FF5555>← Back</gradient>"
+    lore:
+      - ""
+      - "&7Return to main menu"
+    sound:
+      type: "BLOCK_WOODEN_BUTTON_CLICK_ON"
+      volume: 1.0
+      pitch: 1.0
+
+pets:
+  # ===== BABY POLAR BEAR =====
+  baby_polar_bear:
+    slot: 10
+    display:
+      unlocked:
+        material: "POLAR_BEAR_SPAWN_EGG"
+        name: "<gradient:F0F8FF:FFFFFF>🐻 Baby Polar Bear</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A fluffy polar bear cub"
+          - "&7that stays close to keep"
+          - "&7you company in the cold"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Polar Bear"
+        glow: false
+        lore:
+          - ""
+          - "&7A fluffy polar bear cub"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "POLAR_BEAR_SPAWN_EGG"
+        name: "&a✓ Baby Polar Bear"
+        glow: true
+        lore:
+          - ""
+          - "&7A fluffy polar bear cub"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "COMMON"
+    unlock-by-default: true
+    pet:
+      entity-type: "POLAR_BEAR"
+      baby: true
+      name: "<gradient:F0F8FF:FFFFFF>🐻 %player%'s Bear</gradient>"
+      particle: "SNOWFLAKE"
+      particle-interval: 30
+      sound: "ENTITY_POLAR_BEAR_AMBIENT_BABY"
+      sound-interval: 200
+
+  # ===== BABY WOLF =====
+  baby_wolf:
+    slot: 11
+    display:
+      unlocked:
+        material: "WOLF_SPAWN_EGG"
+        name: "<gradient:D3D3D3:FFFFFF>🐺 Baby Wolf</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A loyal wolf puppy"
+          - "&7that follows you"
+          - "&7everywhere faithfully"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Wolf"
+        glow: false
+        lore:
+          - ""
+          - "&7A loyal wolf puppy"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "WOLF_SPAWN_EGG"
+        name: "&a✓ Baby Wolf"
+        glow: true
+        lore:
+          - ""
+          - "&7A loyal wolf puppy"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    pet:
+      entity-type: "WOLF"
+      baby: true
+      name: "<gradient:D3D3D3:FFFFFF>🐺 %player%'s Wolf</gradient>"
+      particle: "HEART"
+      particle-interval: 40
+      sound: "ENTITY_WOLF_AMBIENT"
+      sound-interval: 180
+
+  # ===== BABY FOX =====
+  baby_fox:
+    slot: 12
+    display:
+      unlocked:
+        material: "FOX_SPAWN_EGG"
+        name: "<gradient:FF8C00:FFA500>🦊 Baby Fox</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A playful fox kit"
+          - "&7that prances around"
+          - "&7with endless energy"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Fox"
+        glow: false
+        lore:
+          - ""
+          - "&7A playful fox kit"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "FOX_SPAWN_EGG"
+        name: "&a✓ Baby Fox"
+        glow: true
+        lore:
+          - ""
+          - "&7A playful fox kit"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "RARE"
+    unlock-by-default: false
+    pet:
+      entity-type: "FOX"
+      baby: true
+      fox-type: "RED"
+      name: "<gradient:FF8C00:FFA500>🦊 %player%'s Fox</gradient>"
+      particle: "FLAME"
+      particle-interval: 35
+      sound: "ENTITY_FOX_AMBIENT"
+      sound-interval: 190
+
+  # ===== BABY RABBIT =====
+  baby_rabbit:
+    slot: 13
+    display:
+      unlocked:
+        material: "RABBIT_SPAWN_EGG"
+        name: "<gradient:FFFFFF:FFE4E1>🐰 Baby Rabbit</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7An adorable bunny"
+          - "&7that hops cheerfully"
+          - "&7by your side"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Rabbit"
+        glow: false
+        lore:
+          - ""
+          - "&7An adorable bunny"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "RABBIT_SPAWN_EGG"
+        name: "&a✓ Baby Rabbit"
+        glow: true
+        lore:
+          - ""
+          - "&7An adorable bunny"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    pet:
+      entity-type: "RABBIT"
+      baby: true
+      name: "<gradient:FFFFFF:FFE4E1>🐰 %player%'s Rabbit</gradient>"
+      particle: "VILLAGER_HAPPY"
+      particle-interval: 45
+      sound: "ENTITY_RABBIT_AMBIENT"
+      sound-interval: 210
+
+  # ===== SNOW FOX =====
+  snow_fox:
+    slot: 14
+    display:
+      unlocked:
+        material: "FOX_SPAWN_EGG"
+        name: "<gradient:E0F7FA:FFFFFF>🦊 Snow Fox</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A beautiful arctic fox"
+          - "&7with pure white fur"
+          - "&7perfect for winter"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Snow Fox"
+        glow: false
+        lore:
+          - ""
+          - "&7A beautiful arctic fox"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "FOX_SPAWN_EGG"
+        name: "&a✓ Snow Fox"
+        glow: true
+        lore:
+          - ""
+          - "&7A beautiful arctic fox"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Type: &fWinter"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "EPIC"
+    unlock-by-default: false
+    pet:
+      entity-type: "FOX"
+      baby: true
+      fox-type: "SNOW"
+      name: "<gradient:E0F7FA:FFFFFF>🦊 %player%'s Snow Fox</gradient>"
+      particle: "SNOWFLAKE"
+      particle-interval: 30
+      sound: "ENTITY_FOX_AMBIENT"
+      sound-interval: 190
+
+  # ===== BABY PANDA =====
+  baby_panda:
+    slot: 15
+    display:
+      unlocked:
+        material: "PANDA_SPAWN_EGG"
+        name: "<gradient:000000:FFFFFF>🐼 Baby Panda</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A clumsy panda cub"
+          - "&7that tumbles around"
+          - "&7bringing joy and laughter"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Panda"
+        glow: false
+        lore:
+          - ""
+          - "&7A clumsy panda cub"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PANDA_SPAWN_EGG"
+        name: "&a✓ Baby Panda"
+        glow: true
+        lore:
+          - ""
+          - "&7A clumsy panda cub"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "RARE"
+    unlock-by-default: false
+    pet:
+      entity-type: "PANDA"
+      baby: true
+      name: "<gradient:000000:FFFFFF>🐼 %player%'s Panda</gradient>"
+      particle: "HEART"
+      particle-interval: 40
+      sound: "ENTITY_PANDA_AMBIENT"
+      sound-interval: 200
+
+  # ===== BABY CHICKEN =====
+  baby_chicken:
+    slot: 16
+    display:
+      unlocked:
+        material: "CHICKEN_SPAWN_EGG"
+        name: "<gradient:FFFF00:FFA500>🐣 Baby Chicken</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A tiny chick that"
+          - "&7follows you around"
+          - "&7with adorable chirps"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Chicken"
+        glow: false
+        lore:
+          - ""
+          - "&7A tiny chick"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "CHICKEN_SPAWN_EGG"
+        name: "&a✓ Baby Chicken"
+        glow: true
+        lore:
+          - ""
+          - "&7A tiny chick"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    pet:
+      entity-type: "CHICKEN"
+      baby: true
+      name: "<gradient:FFFF00:FFA500>🐣 %player%'s Chick</gradient>"
+      particle: "VILLAGER_HAPPY"
+      particle-interval: 50
+      sound: "ENTITY_CHICKEN_AMBIENT"
+      sound-interval: 220
+
+  # ===== BABY PIG =====
+  baby_pig:
+    slot: 19
+    display:
+      unlocked:
+        material: "PIG_SPAWN_EGG"
+        name: "<gradient:FFB6C1:FFC0CB>🐷 Baby Pig</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A cute piglet that"
+          - "&7oinks happily while"
+          - "&7waddling beside you"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Pig"
+        glow: false
+        lore:
+          - ""
+          - "&7A cute piglet"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PIG_SPAWN_EGG"
+        name: "&a✓ Baby Pig"
+        glow: true
+        lore:
+          - ""
+          - "&7A cute piglet"
+          - ""
+          - "&8▸ Rarity: &fCommon"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    pet:
+      entity-type: "PIG"
+      baby: true
+      name: "<gradient:FFB6C1:FFC0CB>🐷 %player%'s Pig</gradient>"
+      particle: "HEART"
+      particle-interval: 45
+      sound: "ENTITY_PIG_AMBIENT"
+      sound-interval: 210
+
+  # ===== BABY CAT =====
+  baby_cat:
+    slot: 20
+    display:
+      unlocked:
+        material: "CAT_SPAWN_EGG"
+        name: "<gradient:FFA500:FFD700>🐱 Baby Cat</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A playful kitten that"
+          - "&7purrs and meows while"
+          - "&7following you around"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Cat"
+        glow: false
+        lore:
+          - ""
+          - "&7A playful kitten"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "CAT_SPAWN_EGG"
+        name: "&a✓ Baby Cat"
+        glow: true
+        lore:
+          - ""
+          - "&7A playful kitten"
+          - ""
+          - "&8▸ Rarity: &bRare"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "RARE"
+    unlock-by-default: false
+    pet:
+      entity-type: "CAT"
+      baby: true
+      cat-type: "TABBY"
+      name: "<gradient:FFA500:FFD700>🐱 %player%'s Cat</gradient>"
+      particle: "HEART"
+      particle-interval: 40
+      sound: "ENTITY_CAT_AMBIENT"
+      sound-interval: 180
+
+  # ===== BABY PARROT =====
+  baby_parrot:
+    slot: 21
+    display:
+      unlocked:
+        material: "PARROT_SPAWN_EGG"
+        name: "<gradient:00FF00:0000FF>🦜 Baby Parrot</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7A colorful parrot that"
+          - "&7perches on your shoulder"
+          - "&7and mimics sounds"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aUnlocked"
+          - ""
+          - "&aClick to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Baby Parrot"
+        glow: false
+        lore:
+          - ""
+          - "&7A colorful parrot"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "PARROT_SPAWN_EGG"
+        name: "&a✓ Baby Parrot"
+        glow: true
+        lore:
+          - ""
+          - "&7A colorful parrot"
+          - ""
+          - "&8▸ Rarity: &cEpic"
+          - "&8▸ Type: &aAdorable"
+          - "&8▸ Status: &aEquipped"
+          - ""
+          - "&e▶ Right-click pet to interact!"
+    rarity: "EPIC"
+    unlock-by-default: false
+    pet:
+      entity-type: "PARROT"
+      baby: false
+      parrot-variant: "BLUE"
+      name: "<gradient:00FF00:0000FF>🦜 %player%'s Parrot</gradient>"
+      particle: "NOTE"
+      particle-interval: 35
+      sound: "ENTITY_PARROT_AMBIENT"
+      sound-interval: 160
+
+settings:
+  follow-distance: 3.0
+  teleport-distance: 10.0
+  update-interval: 5
+  pathfinding-enabled: true
+  prevent-damage: true
+  prevent-target: true

@@ -1,0 +1,77 @@
+id: "santa"
+display-name: "&c&lSanta &f&lBox"
+max-rewards: 2
+
+item:
+  material: "CHEST"
+  name: "&c🎁 Santa Box"
+  lore:
+    - "&7Contains Christmas gifts"
+    - "&fRight-click to open"
+
+animation:
+  type: "santa_ascent"
+  duration: 3.0
+  speed: 1.2
+
+effects:
+  sound-open: "ENTITY_PLAYER_LEVELUP"
+  sound-reward: "ENTITY_PLAYER_LEVELUP"
+
+requirements:
+  permission: "none"
+  cooldown: 30
+
+rewards:
+  '1':
+    items:
+      - material: DIAMOND_SWORD
+        amount: 1
+        name: "&#FF0000&lCHRISTMAS SWORD"
+        lore:
+          - ""
+          - "&bA sword forged in ice"
+          - "&band Christmas fire"
+          - ""
+          - "&fEnchantments:"
+          - "&7 Sharpness V"
+          - "&7 Fire Aspect II"
+        enchantments:
+          - "DAMAGE_ALL:5"
+          - "FIRE_ASPECT:2"
+        flags:
+          - "HIDE_ENCHANTS"
+        glow: false
+    chance: 10
+    broadcast: "&b%player% &fhas won %reward%&f!"
+    broadcast_general: true
+
+  '2':
+    items:
+      - material: DIAMOND
+        amount: 5
+        name: "&#00FFFFChristmas Diamonds"
+        lore:
+          - "&7Shiny diamonds"
+    chance: 30
+    broadcast: "&fYou have won %reward%&f!"
+    broadcast_general: false
+
+  '3':
+    items:
+      - material: EMERALD
+        amount: 10
+        name: "&#00FF00Santa's Emeralds"
+    chance: 50
+    broadcast: "&fYou have won %reward%&f!"
+    broadcast_general: false
+
+  '4':
+    commands:
+      - "give %player% diamond 3"
+      - "give %player% gold_ingot 5"
+    item: DIAMOND
+    name: "&6Special Reward"
+    chance: 50
+    broadcast: "&b%player% &fhas won a &6Special Reward&f!"
+    broadcast_general: true

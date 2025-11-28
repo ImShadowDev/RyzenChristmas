@@ -1,0 +1,52 @@
+id: "firework"
+display-name: "&#FF6B6B&lFirework &#FFD93D&lBox"
+max-rewards: 3
+
+item:
+  material: "RED_SHULKER_BOX"
+  name: "&#FF6B6B🎆 Firework Box"
+  lore:
+    - "&7Explode with surprises!"
+    - "&eRight-click to open"
+
+animation:
+  type: "firework_burst"
+  duration: 5.0
+  speed: 1.0
+
+effects:
+  sound-open: "ENTITY_FIREWORK_ROCKET_LAUNCH"
+  sound-reward: "ENTITY_FIREWORK_ROCKET_BLAST"
+
+requirements:
+  permission: "none"
+  cooldown: 0
+
+rewards:
+  '1':
+    items:
+      - material: FIREWORK_ROCKET
+        amount: 16
+        name: "&#FF6B6B&lChristmas Rocket"
+        lore:
+          - "&7Light up the sky"
+    chance: 60
+
+  '2':
+    items:
+      - material: TNT
+        amount: 8
+        name: "&#FF0000&lFestive TNT"
+        lore:
+          - "&cBOOM!"
+    chance: 30
+
+  '3':
+    items:
+      - material: FLINT_AND_STEEL
+        amount: 1
+        name: "&#FFD93D&lGolden Lighter"
+        enchantments:
+          - "DURABILITY:3"
+        glow: true
+    chance: 10

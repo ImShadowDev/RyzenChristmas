@@ -1,0 +1,233 @@
+main_menu:
+  title: "&#FF0000&l❄ &#FFFFFF&lChristmas Cosmetics &#FF0000&l❄"
+  size: 54
+  update-interval: 20
+
+  decoration:
+    enabled: true
+    filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+    
+    custom:
+      border_top:
+        enabled: true
+        slots: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+        material: "RED_STAINED_GLASS_PANE"
+        name: " "
+        glow: false
+      
+      border_bottom:
+        enabled: true
+        slots: [45, 46, 47, 48, 50, 51, 52, 53]
+        material: "GREEN_STAINED_GLASS_PANE"
+        name: " "
+        glow: false
+      
+      snow_deco_1:
+        enabled: true
+        slots: [9, 17]
+        material: "SNOW_BLOCK"
+        name: "&#FFFFFF&l❄"
+        glow: true
+      
+      snow_deco_2:
+        enabled: true
+        slots: [18, 26]
+        material: "PACKED_ICE"
+        name: "&#00FFFF&l❄"
+        glow: true
+      
+      ice_deco:
+        enabled: true
+        slots: [27, 35]
+        material: "BLUE_ICE"
+        name: "&#0088FF&l❄"
+        glow: true
+      
+      gift_deco:
+        enabled: true
+        slots: [36, 44]
+        material: "CHEST"
+        name: "&#FF0000&l🎁"
+        glow: true
+        lore:
+          - "&#FFFFFFChristmas Cosmetics"
+
+  categories:
+    particles:
+      enabled: true
+      slot: 20
+      material: "FIREWORK_STAR"
+      name: "&#FFFF00&l✨ Particles"
+      glow: true
+      lore:
+        - ""
+        - "&7&oIncredible visual effects"
+        - "&7&othat surround you constantly"
+        - ""
+        - "&8▸ &fTotal: &e%total_particles%"
+        - "&8▸ &fUnlocked: &a%unlocked_particles%"
+        - "&8▸ &fEquipped: &e%equipped_particle%"
+        - ""
+        - "&#FFFF00► Click to open"
+      sound:
+        type: "BLOCK_NOTE_BLOCK_PLING"
+        volume: 1.0
+        pitch: 1.5
+      action: "OPEN_MENU"
+      menu: "particles"
+
+    hats:
+      enabled: true
+      slot: 21
+      material: "LEATHER_HELMET"
+      name: "&#FF0000&l🎅 Hats"
+      glow: true
+      leather-color: "255,0,0"
+      lore:
+        - ""
+        - "&7&oChristmas hats and accessories"
+        - "&7&oto decorate your head"
+        - ""
+        - "&8▸ &fTotal: &e%total_hats%"
+        - "&8▸ &fUnlocked: &a%unlocked_hats%"
+        - "&8▸ &fEquipped: &e%equipped_hat%"
+        - ""
+        - "&#FFFF00► Click to open"
+      sound:
+        type: "ITEM_ARMOR_EQUIP_LEATHER"
+        volume: 1.0
+        pitch: 1.0
+      action: "OPEN_MENU"
+      menu: "hats"
+
+    pets:
+      enabled: true
+      slot: 22
+      material: "CHICKEN_SPAWN_EGG"
+      name: "&#00FFFF&l🐧 Pets"
+      glow: true
+      lore:
+        - ""
+        - "&7&oAdorable companions that"
+        - "&7&owill follow you everywhere"
+        - ""
+        - "&8▸ &fTotal: &e%total_pets%"
+        - "&8▸ &fUnlocked: &a%unlocked_pets%"
+        - "&8▸ &fEquipped: &e%equipped_pet%"
+        - ""
+        - "&#FFFF00► Click to open"
+      sound:
+        type: "ENTITY_CHICKEN_AMBIENT"
+        volume: 0.8
+        pitch: 1.5
+      action: "OPEN_MENU"
+      menu: "pets"
+
+    trails:
+      enabled: true
+      slot: 23
+      material: "SNOWBALL"
+      name: "&#FFFFFF&l❄ Trails"
+      glow: true
+      lore:
+        - ""
+        - "&7&oLeave a magical trail"
+        - "&7&owhen walking through the world"
+        - ""
+        - "&8▸ &fTotal: &e%total_trails%"
+        - "&8▸ &fUnlocked: &a%unlocked_trails%"
+        - "&8▸ &fEquipped: &e%equipped_trail%"
+        - ""
+        - "&#FFFF00► Click to open"
+      sound:
+        type: "ENTITY_SNOWBALL_THROW"
+        volume: 1.0
+        pitch: 1.2
+      action: "OPEN_MENU"
+      menu: "trails"
+
+    gadgets:
+      enabled: true
+      slot: 24
+      material: "BLAZE_ROD"
+      name: "&#FF8800&l⚡ Gadgets"
+      glow: true
+      lore:
+        - ""
+        - "&7&oInteractive and fun items"
+        - "&7&oto use with your friends"
+        - ""
+        - "&8▸ &fTotal: &e%total_gadgets%"
+        - "&8▸ &fUnlocked: &a%unlocked_gadgets%"
+        - "&8▸ &fEquipped: &e%equipped_gadget%"
+        - ""
+        - "&#FFFF00► Click to open"
+      sound:
+        type: "ENTITY_BLAZE_SHOOT"
+        volume: 0.8
+        pitch: 1.0
+      action: "OPEN_MENU"
+      menu: "gadgets"
+
+  utility:
+    profile:
+      enabled: true
+      slot: 49
+      material: "PLAYER_HEAD"
+      skull-owner: "%player%"
+      name: "&#00FF00&lYour Profile"
+      glow: false
+      lore:
+        - ""
+        - "&7Player: &#FFFFFF%player%"
+        - "&7Level: &#FFFF00%level%"
+        - "&7Coins: &#FFD700%coins%"
+        - ""
+        - "&aTotal unlocked:"
+        - "&8▸ &fCosmetics: &a%total_unlocked%&8/&7%total_cosmetics%"
+        - "&8▸ &fProgress: %progress_bar%"
+        - ""
+        - "&#FFFF00► Click to view stats"
+      sound:
+        type: "ENTITY_PLAYER_LEVELUP"
+        volume: 0.5
+        pitch: 1.0
+      action: "COMMAND"
+      command: "christmas:profile"
+
+    reset:
+      enabled: true
+      slot: 48
+      material: "BARRIER"
+      name: "&#FF0000&lRemove All"
+      glow: false
+      lore:
+        - ""
+        - "&7&oUnequip all your"
+        - "&7&oactive cosmetics"
+        - ""
+        - "&#FFFF00► Click to reset"
+      sound:
+        type: "ENTITY_ITEM_BREAK"
+        volume: 1.0
+        pitch: 0.8
+      action: "RESET"
+
+    close:
+      enabled: true
+      slot: 50
+      material: "DARK_OAK_DOOR"
+      name: "&#FF0000&lClose"
+      glow: false
+      lore:
+        - ""
+        - "&7&oClose this menu"
+        - ""
+        - "&#FFFF00► Click to close"
+      sound:
+        type: "BLOCK_CHEST_CLOSE"
+        volume: 1.0
+        pitch: 1.0
+      action: "CLOSE"

@@ -1,0 +1,598 @@
+menu:
+  title: "<gradient:FF8800:FFAA00>⚡ Gadgets ⚡</gradient>"
+  size: 54
+
+  decoration:
+    filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+
+    border:
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 45, 46, 47, 48, 50, 51, 52, 53]
+      material: "ORANGE_STAINED_GLASS_PANE"
+      name: " "
+      glow: false
+
+  back_button:
+    slot: 49
+    material: "ARROW"
+    name: "<gradient:FF0000:FF5555>← Back</gradient>"
+    lore:
+      - ""
+      - "&7Return to main menu"
+    sound:
+      type: "BLOCK_WOODEN_BUTTON_CLICK_ON"
+      volume: 1.0
+      pitch: 1.0
+
+gadgets:
+  # ===== FIREWORK LAUNCHER =====
+  firework_launcher:
+    slot: 10
+    display:
+      unlocked:
+        material: "FIREWORK_ROCKET"
+        name: "<gradient:FF0000:FFFF00>🎆 Firework Launcher</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Launch colorful fireworks"
+          - "&7into the sky to celebrate"
+          - "&7with your friends"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e3 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Firework Launcher"
+        glow: false
+        lore:
+          - ""
+          - "&7Launch colorful fireworks"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "FIREWORK_ROCKET"
+        name: "&a✔ Firework Launcher"
+        glow: true
+        lore:
+          - ""
+          - "&7Launch colorful fireworks"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e3 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to use!"
+    rarity: "COMMON"
+    unlock-by-default: true
+    cooldown: 3
+    item:
+      material: "FIREWORK_ROCKET"
+      name: "<gradient:FF0000:FFFF00>🎆 Firework Launcher</gradient>"
+      slot: 4
+    effect:
+      type: "FIREWORK"
+      colors: ["FF0000", "00FF00", "0000FF", "FFFF00", "FF00FF"]
+      fade-colors: ["FFFFFF"]
+      trail: true
+      flicker: true
+      power: 1
+
+  # ===== SNOWBALL CANNON =====
+  snowball_cannon:
+    slot: 11
+    display:
+      unlocked:
+        material: "SNOWBALL"
+        name: "<gradient:FFFFFF:AAFFFF>❄ Snowball Cannon</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Shoot rapid snowballs"
+          - "&7with particle trails"
+          - "&7(No damage, just fun!)"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e1 second"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Snowball Cannon"
+        glow: false
+        lore:
+          - ""
+          - "&7Shoot rapid snowballs"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "SNOWBALL"
+        name: "&a✔ Snowball Cannon"
+        glow: true
+        lore:
+          - ""
+          - "&7Shoot rapid snowballs"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e1 second"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to shoot!"
+    rarity: "COMMON"
+    unlock-by-default: true
+    cooldown: 1
+    item:
+      material: "SNOWBALL"
+      name: "<gradient:FFFFFF:AAFFFF>❄ Snowball Cannon</gradient>"
+      slot: 4
+    effect:
+      type: "PROJECTILE"
+      particle: "SNOWFLAKE"
+      sound: "ENTITY_SNOWBALL_THROW"
+
+  # ===== CONFETTI BOMB =====
+  confetti_bomb:
+    slot: 12
+    display:
+      unlocked:
+        material: "TNT"
+        name: "<gradient:FF1493:FFB6C1>🎉 Confetti Bomb</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Throw a bomb that explodes"
+          - "&7into colorful confetti"
+          - "&7and celebration particles"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Cooldown: &e5 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Confetti Bomb"
+        glow: false
+        lore:
+          - ""
+          - "&7Throw a confetti bomb"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "TNT"
+        name: "&a✔ Confetti Bomb"
+        glow: true
+        lore:
+          - ""
+          - "&7Throw a confetti bomb"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Cooldown: &e5 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to throw!"
+    rarity: "RARE"
+    unlock-by-default: false
+    cooldown: 5
+    item:
+      material: "TNT"
+      name: "<gradient:FF1493:FFB6C1>🎉 Confetti Bomb</gradient>"
+      slot: 4
+    effect:
+      type: "EXPLOSION"
+      particle: "VILLAGER_HAPPY"
+      sound: "ENTITY_FIREWORK_ROCKET_BLAST"
+      radius: 3.0
+
+  # ===== BUBBLE BLOWER =====
+  bubble_blower:
+    slot: 13
+    display:
+      unlocked:
+        material: "GLASS_BOTTLE"
+        name: "<gradient:00BFFF:87CEEB>🫧 Bubble Blower</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Blow floating bubbles"
+          - "&7that drift upward"
+          - "&7and pop beautifully"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e2 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Bubble Blower"
+        glow: false
+        lore:
+          - ""
+          - "&7Blow floating bubbles"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "GLASS_BOTTLE"
+        name: "&a✔ Bubble Blower"
+        glow: true
+        lore:
+          - ""
+          - "&7Blow floating bubbles"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e2 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to blow!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    cooldown: 2
+    item:
+      material: "GLASS_BOTTLE"
+      name: "<gradient:00BFFF:87CEEB>🫧 Bubble Blower</gradient>"
+      slot: 4
+    effect:
+      type: "BUBBLE"
+      particle: "BUBBLE_POP"
+      sound: "BLOCK_BUBBLE_COLUMN_BUBBLE_POP"
+
+  # ===== RAINBOW TRAIL =====
+  rainbow_trail:
+    slot: 14
+    display:
+      unlocked:
+        material: "BLAZE_ROD"
+        name: "<gradient:FF0000:FF7F00>R<gradient:FFFF00:00FF00>a<gradient:0000FF:8B00FF>i</gradient>nbow Wand"
+        glow: true
+        lore:
+          - ""
+          - "&7Wave a magical wand"
+          - "&7that creates rainbow"
+          - "&7particle trails"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Cooldown: &e0.5 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Rainbow Wand"
+        glow: false
+        lore:
+          - ""
+          - "&7Wave a magical wand"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "BLAZE_ROD"
+        name: "&a✔ Rainbow Wand"
+        glow: true
+        lore:
+          - ""
+          - "&7Wave a magical wand"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Cooldown: &e0.5 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to wave!"
+    rarity: "EPIC"
+    unlock-by-default: false
+    cooldown: 0.5
+    item:
+      material: "BLAZE_ROD"
+      name: "<gradient:FF0000:FF7F00>R<gradient:FFFF00:00FF00>a<gradient:0000FF:8B00FF>i</gradient>nbow Wand"
+      slot: 4
+    effect:
+      type: "TRAIL"
+      particle: "REDSTONE"
+      rainbow: true
+
+  # ===== GIFT BOX =====
+  gift_box:
+    slot: 15
+    display:
+      unlocked:
+        material: "CHEST"
+        name: "<gradient:FF0000:00FF00>🎁 Gift Box</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Place a decorative gift"
+          - "&7that bursts with particles"
+          - "&7when someone gets close"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Cooldown: &e8 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Gift Box"
+        glow: false
+        lore:
+          - ""
+          - "&7Place a decorative gift"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "CHEST"
+        name: "&a✔ Gift Box"
+        glow: true
+        lore:
+          - ""
+          - "&7Place a decorative gift"
+          - ""
+          - "&8▸&f Rarity: &bRare"
+          - "&8▸&f Cooldown: &e8 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to place!"
+    rarity: "RARE"
+    unlock-by-default: false
+    cooldown: 8
+    item:
+      material: "CHEST"
+      name: "<gradient:FF0000:00FF00>🎁 Gift Box</gradient>"
+      slot: 4
+    effect:
+      type: "PLACED"
+      particle: "VILLAGER_HAPPY"
+      sound: "ENTITY_PLAYER_LEVELUP"
+      duration: 10
+
+  # ===== PARTY POPPER =====
+  party_popper:
+    slot: 16
+    display:
+      unlocked:
+        material: "FIRE_CHARGE"
+        name: "<gradient:FFD700:FFA500>🎊 Party Popper</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Pop it to create"
+          - "&7a burst of celebration"
+          - "&7with sounds and effects"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e4 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Party Popper"
+        glow: false
+        lore:
+          - ""
+          - "&7Pop it to create celebrations"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "FIRE_CHARGE"
+        name: "&a✔ Party Popper"
+        glow: true
+        lore:
+          - ""
+          - "&7Pop it to create celebrations"
+          - ""
+          - "&8▸&f Rarity: &fCommon"
+          - "&8▸&f Cooldown: &e4 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to pop!"
+    rarity: "COMMON"
+    unlock-by-default: false
+    cooldown: 4
+    item:
+      material: "FIRE_CHARGE"
+      name: "<gradient:FFD700:FFA500>🎊 Party Popper</gradient>"
+      slot: 4
+    effect:
+      type: "BURST"
+      particle: "FIREWORKS_SPARK"
+      sound: "ENTITY_FIREWORK_ROCKET_TWINKLE"
+
+  # ===== MAGIC CARPET =====
+  magic_carpet:
+    slot: 19
+    display:
+      unlocked:
+        material: "CARPET"
+        name: "<gradient:9370DB:BA55D3>🪄 Magic Carpet</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Summon a floating carpet"
+          - "&7with mystical particles"
+          - "&7beneath your feet"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Cooldown: &e10 seconds"
+          - "&8▸&f Duration: &e5 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Magic Carpet"
+        glow: false
+        lore:
+          - ""
+          - "&7Summon a floating carpet"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "CARPET"
+        name: "&a✔ Magic Carpet"
+        glow: true
+        lore:
+          - ""
+          - "&7Summon a floating carpet"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Cooldown: &e10 seconds"
+          - "&8▸&f Duration: &e5 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to summon!"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    cooldown: 10
+    item:
+      material: "CARPET"
+      name: "<gradient:9370DB:BA55D3>🪄 Magic Carpet</gradient>"
+      slot: 4
+    effect:
+      type: "AURA"
+      particle: "ENCHANTMENT_TABLE"
+      duration: 5
+
+  # ===== FROST BOMB =====
+  frost_bomb:
+    slot: 20
+    display:
+      unlocked:
+        material: "SNOWBALL"
+        name: "<gradient:00FFFF:FFFFFF>❄ Frost Bomb</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Throw a freezing bomb"
+          - "&7that creates an icy"
+          - "&7explosion on impact"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Cooldown: &e6 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Frost Bomb"
+        glow: false
+        lore:
+          - ""
+          - "&7Throw a freezing bomb"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "SNOWBALL"
+        name: "&a✔ Frost Bomb"
+        glow: true
+        lore:
+          - ""
+          - "&7Throw a freezing bomb"
+          - ""
+          - "&8▸&f Rarity: &cEpic"
+          - "&8▸&f Cooldown: &e6 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to throw!"
+    rarity: "EPIC"
+    unlock-by-default: false
+    cooldown: 6
+    item:
+      material: "SNOWBALL"
+      name: "<gradient:00FFFF:FFFFFF>❄ Frost Bomb</gradient>"
+      slot: 4
+    effect:
+      type: "PROJECTILE_EXPLOSION"
+      particle: "SNOWFLAKE"
+      sound: "BLOCK_GLASS_BREAK"
+      radius: 2.5
+
+  # ===== DISCO BALL =====
+  disco_ball:
+    slot: 21
+    display:
+      unlocked:
+        material: "SEA_LANTERN"
+        name: "<gradient:FF00FF:00FFFF>🪩 Disco Ball</gradient>"
+        glow: true
+        lore:
+          - ""
+          - "&7Create a floating disco ball"
+          - "&7that shoots colorful beams"
+          - "&7in all directions"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Cooldown: &e12 seconds"
+          - "&8▸&f Duration: &e8 seconds"
+          - "&8▸&f Status: &aUnlocked"
+          - ""
+          - "&a► Click to select"
+      locked:
+        material: "GRAY_DYE"
+        name: "&7🔒 Disco Ball"
+        glow: false
+        lore:
+          - ""
+          - "&7Create a floating disco ball"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Status: &cLocked"
+          - ""
+          - "&c✖ Unlock to use"
+      equipped:
+        material: "SEA_LANTERN"
+        name: "&a✔ Disco Ball"
+        glow: true
+        lore:
+          - ""
+          - "&7Create a floating disco ball"
+          - ""
+          - "&8▸&f Rarity: &6Legendary"
+          - "&8▸&f Cooldown: &e12 seconds"
+          - "&8▸&f Duration: &e8 seconds"
+          - "&8▸&f Status: &aEquipped"
+          - ""
+          - "&e► Right-click to place!"
+    rarity: "LEGENDARY"
+    unlock-by-default: false
+    cooldown: 12
+    item:
+      material: "SEA_LANTERN"
+      name: "<gradient:FF00FF:00FFFF>🪩 Disco Ball</gradient>"
+      slot: 4
+    effect:
+      type: "DISCO"
+      particle: "REDSTONE"
+      duration: 8
+      rainbow: true

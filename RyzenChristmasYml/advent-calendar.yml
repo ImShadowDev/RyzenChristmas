@@ -1,0 +1,163 @@
+calendar:
+  # Calendar Mode: CLASSIC, ACCUMULATIVE, PROGRESSIVE
+  # CLASSIC: If you don't claim the day, you lose the reward.
+  # ACCUMULATIVE: You can claim past days.
+  # PROGRESSIVE: You can only claim if you have claimed the previous days.
+  mode: "ACCUMULATIVE"
+  start-date: "12/01/2025"
+  end-date: "12/31/2025"
+  commands:
+    - "advent"
+    - "calendar"
+    - "navidad"
+
+gui:
+  title: "&#FF0000&l⛄ &#FFFFFFAdvent Calendar &#FF0000&l⛄"
+  size: 54
+  auto-update: true
+
+days:
+  1:
+    slot: 10
+    unclaimed:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ1YzM4ZmI1NjMyMGZhMTM2MzdhY2ZlODIwNzdiNmQ3ODBiODg5Zjc3NDJkNjliY2M2ZTVhZTAzNWVhZmQyNyJ9fX0="
+      name: "&#FFD700&l⭐ Day 1 - &#FFFFFF&lAvailable"
+      lore:
+        - ""
+        - "&#00FF00&l✔ Click to claim your reward"
+        - ""
+        - "&#FFFF00Reward:"
+        - "&#FF5555&l❤ &#FFFFFF1x Diamond"
+        - ""
+      enchanted: true
+
+    claimed:
+      material: "LIME_STAINED_GLASS_PANE"
+      name: "&#00FF00&l✔ Day 1 - &#FFFFFF&lClaimed"
+      lore:
+        - ""
+        - "&#00FF00You already claimed this day"
+        - ""
+
+    locked:
+      material: "RED_STAINED_GLASS_PANE"
+      name: "&#FF0000&l✖ Day 1 - &#FFFFFF&lLocked"
+      lore:
+        - ""
+        - "&#FF0000This day is not available yet"
+        - "&7Available: 01/12/2025"
+        - ""
+
+    rewards:
+      commands:
+        - "give %player% gold_ingot 5"
+      items:
+        - material: DIAMOND_SWORD
+          amount: 1
+          name: "&#FF0000&lCHRISTMAS SWORD"
+          lore:
+            - ""
+            - "&bA sword forged in ice"
+            - "&band Christmas fire"
+            - ""
+            - "&fEnchantments:"
+            - "&7 Sharpness V"
+            - "&7 Fire Aspect II"
+          enchantments:
+            - "DAMAGE_ALL:5"
+            - "FIRE_ASPECT:2"
+          flags:
+            - "HIDE_ENCHANTS"
+          glow: false
+
+  2:
+    slot: 11
+    unclaimed:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ1YzM4ZmI1NjMyMGZhMTM2MzdhY2ZlODIwNzdiNmQ3ODBiODg5Zjc3NDJkNjliY2M2ZTVhZTAzNWVhZmQyNyJ9fX0="
+      name: "&#FFD700&l⭐ Day 2 - &#FFFFFF&lAvailable"
+      lore:
+        - ""
+        - "&#00FF00&l✔ Click to claim"
+        - ""
+      enchanted: true
+    claimed:
+      material: "LIME_STAINED_GLASS_PANE"
+      name: "&#00FF00&l✔ Day 2 - Claimed"
+      lore:
+        - ""
+        - "&#00FF00You already claimed this day"
+        - ""
+    locked:
+      material: "RED_STAINED_GLASS_PANE"
+      name: "&#FF0000&l✖ Day 2 - Locked"
+      lore:
+        - ""
+        - "&#FF0000Not available yet"
+        - ""
+    rewards:
+      commands:
+        - "give %player% emerald 3"
+      items: []
+
+  3:
+    slot: 12
+    unclaimed:
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ1YzM4ZmI1NjMyMGZhMTM2MzdhY2ZlODIwNzdiNmQ3ODBiODg5Zjc3NDJkNjliY2M2ZTVhZTAzNWVhZmQyNyJ9fX0="
+      name: "&#FFD700&l⭐ Day 3 - &#FFFFFF&lAvailable"
+      lore:
+        - ""
+        - "&#00FF00&l✔ Click to claim"
+        - ""
+      enchanted: true
+    claimed:
+      material: "LIME_STAINED_GLASS_PANE"
+      name: "&#00FF00&l✔ Day 3 - Claimed"
+      lore:
+        - ""
+        - "&#00FF00You already claimed this day"
+        - ""
+    locked:
+      material: "RED_STAINED_GLASS_PANE"
+      name: "&#FF0000&l✖ Day 3 - Locked"
+      lore:
+        - ""
+        - "&#FF0000Not available yet"
+        - ""
+    rewards:
+      commands:
+        - "give %player% gold_ingot 5"
+      items: []
+
+decoration:
+  filler:
+    enabled: true
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+
+  custom:
+    tree:
+      enabled: true
+      slot: 4
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM5MTIwM2QzNzUyYWZjNzFkOGY4Y2IwZGE4ZGJjN2YxM2EzYmFhZmUwYmY1ZjkxMWNiMjFjMzgzNDFmODdkYiJ9fX0="
+      name: "&#00FF00&l🎄 &#FFFFFF&lChristmas Tree"
+      lore:
+        - ""
+        - "&#FFFFFFWelcome to the Advent Calendar"
+        - ""
+
+    info:
+      enabled: true
+      slot: 49
+      material: "BOOK"
+      name: "&#FFD700&lInformation"
+      lore:
+        - ""
+        - "&#FFFFFFDays claimed: &#00FF00%claimed%&#FFFFFF/&#FF5555%total%"
+        - "&#FFFFFFAvailable days: &#FFFF00%available%"
+        - ""
+        - "&#FFFFFFMode: &#FF5555%mode%"
+        - ""

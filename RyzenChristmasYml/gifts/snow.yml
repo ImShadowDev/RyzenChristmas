@@ -1,0 +1,56 @@
+id: "snow"
+display-name: "&#E0F7FA&lSnow &#FFFFFF&lBox"
+max-rewards: 1
+
+item:
+  material: "LIGHT_BLUE_SHULKER_BOX"
+  name: "&#E0F7FA❄ Snow Box"
+  lore:
+    - "&7Frozen by winter"
+    - "&bRight-click to open"
+
+animation:
+  type: "spiral_snow"
+  duration: 4.0
+  speed: 1.5
+
+effects:
+  sound-open: "BLOCK_SNOW_BREAK"
+  sound-reward: "BLOCK_BELL_USE"
+
+requirements:
+  permission: "christmas.box.snow"
+  cooldown: 60
+
+rewards:
+  '1':
+    items:
+      - material: ICE
+        amount: 64
+        name: "&#B3E5FC&lPure Ice"
+        lore:
+          - "&7Ice from the north"
+    chance: 40
+    broadcast: "&b%player% &fhas won &#B3E5FC&lPure Ice&f!"
+    broadcast_general: true
+
+  '2':
+    items:
+      - material: SNOW_BLOCK
+        amount: 32
+        name: "&#FFFFFF&lSnow Blocks"
+    chance: 40
+    broadcast: "&fYou have won %reward%&f!"
+    broadcast_general: false
+
+  '3':
+    items:
+      - material: PACKED_ICE
+        amount: 16
+        name: "&#81D4FA&lPacked Ice"
+        lore:
+          - "&bVery frozen"
+          - "&7Doesn't melt easily"
+    chance: 20
+    broadcast: "&fYou have won %reward%&f!"
+    broadcast_general: false
