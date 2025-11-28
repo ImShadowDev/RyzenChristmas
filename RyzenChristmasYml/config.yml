@@ -1,0 +1,26 @@
+settings:
+  language: "en_en"
+  storage-type: "YAML"
+  timezone: "America/Mexico_City"
+
+  notifications:
+    on-join: true
+    on-new-day: true
+    check-interval: 5
+
+  cosmetics:
+    gadgets:
+      check-slot-occupied: true
+      remove-on-unequip: true
+      give-on-login: true
+
+    pets:
+      enabled: true
+      spawn-on-login: true
+
+winter:
+  restore-on-restart: false           # Restore sessions on restart
+  auto-save-interval: 300            # Auto save (seconds)
+  disabled-worlds:
+    - "world_nether"
+    - "world_the_end"
